@@ -1,3 +1,7 @@
 currently model and viewModel is defined in ROME, but will be handled by ROME, which means they will be saved as ROME way (into our database as definied data type).
 but the workflow model is created and queryed by workflow web modeler or workflow engine, means we can define those model in ROME, but it's readonly for ROME, and we also 
-need cusomize those model's loading and query method (also in rest api, which I am not sure core web API can do that or not.
+need cusomize those model's loading and query method (also in rest api, which I am not sure core web API can do that or not).
+
+so if the ROME model save method can overwrite to nothing, and query or load method can customized and core WEB API use standard way to load them, we can use ROME model.
+if viewmodel don't have such tight couple with workflow context, we can re-use it as core API, otherwise, we need build another API 
+if ro-grid search button has replacement way, we also can re-use it.
